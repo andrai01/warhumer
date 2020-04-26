@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<link rel="shortcut icon" href="adeptus-mechanicus.ico" type="image/x-icon">
+<title>Отчет ТехноЖреца</title>
+<head>
+  <!-- Based on http://codepen.io/lbebber/pen/ypgql -->
+  <link href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" rel='stylesheet'/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <style>
+    /* Just colors and font sizes */
+    * {
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: black;  
+    }
+    .glitch {
+      color: white;
+      font-size: 30px;
+
+    }
+    
+    /* Real glitch effect */
+    .glitch {
+      position: relative;
+    }
+    
+    .glitch:after {
+      animation: glitch-animation 2s infinite linear alternate-reverse;
+      background: black;
+      clip: rect( 0, 900px, 0, 0 );
+      color: white;
+      content: attr( data-text );
+      left: 2px;
+      overflow: hidden;
+      position: absolute;
+      text-shadow: -1px 0 red;
+      top: 0;
+    }
+
+    .glitch:before {
+      animation: glitch-animation-2 3s infinite linear alternate-reverse;
+      background: black;
+      clip: rect( 0, 900px, 0, 0 );
+      color: white;
+      content: attr( data-text );
+      left: -2px;
+      overflow: hidden;
+      position: absolute;
+      text-shadow: 1px 0 blue;
+      top: 0;
+    }
+
+    /* Expanded Animations */
+    @keyframes glitch-animation {
+      0% {
+        clip: rect(42px, 9999px, 44px, 0);
+      }
+      5% {
+        clip: rect(12px, 9999px, 59px, 0);
+      }
+      10% {
+        clip: rect(48px, 9999px, 29px, 0);
+      }
+      15.0% {
+        clip: rect(42px, 9999px, 73px, 0);
+      }
+      20% {
+        clip: rect(63px, 9999px, 27px, 0);
+      }
+      25% {
+        clip: rect(34px, 9999px, 55px, 0);
+      }
+      30.0% {
+        clip: rect(86px, 9999px, 73px, 0);
+      }
+      35% {
+        clip: rect(20px, 9999px, 20px, 0);
+      }
+      40% {
+        clip: rect(26px, 9999px, 60px, 0);
+      }
+      45% {
+        clip: rect(25px, 9999px, 66px, 0);
+      }
+      50% {
+        clip: rect(57px, 9999px, 98px, 0);
+      }
+      55.0% {
+        clip: rect(5px, 9999px, 46px, 0);
+      }
+      60.0% {
+        clip: rect(82px, 9999px, 31px, 0);
+      }
+      65% {
+        clip: rect(54px, 9999px, 27px, 0);
+      }
+      70% {
+        clip: rect(28px, 9999px, 99px, 0);
+      }
+      75% {
+        clip: rect(45px, 9999px, 69px, 0);
+      }
+      80% {
+        clip: rect(23px, 9999px, 85px, 0);
+      }
+      85.0% {
+        clip: rect(54px, 9999px, 84px, 0);
+      }
+      90% {
+        clip: rect(45px, 9999px, 47px, 0);
+      }
+      95% {
+        clip: rect(37px, 9999px, 20px, 0);
+      }
+      100% {
+        clip: rect(4px, 9999px, 91px, 0);
+      }
+    }
+
+    @keyframes glitch-animation-2 {
+      0% {
+        clip: rect(65px, 9999px, 100px, 0);
+      }
+      5% {
+        clip: rect(52px, 9999px, 74px, 0);
+      }
+      10% {
+        clip: rect(79px, 9999px, 85px, 0);
+      }
+      15.0% {
+        clip: rect(75px, 9999px, 5px, 0);
+      }
+      20% {
+        clip: rect(67px, 9999px, 61px, 0);
+      }
+      25% {
+        clip: rect(14px, 9999px, 79px, 0);
+      }
+      30.0% {
+        clip: rect(1px, 9999px, 66px, 0);
+      }
+      35% {
+        clip: rect(86px, 9999px, 30px, 0);
+      }
+      40% {
+        clip: rect(23px, 9999px, 98px, 0);
+      }
+      45% {
+        clip: rect(85px, 9999px, 72px, 0);
+      }
+      50% {
+        clip: rect(71px, 9999px, 75px, 0);
+      }
+      55.0% {
+        clip: rect(2px, 9999px, 48px, 0);
+      }
+      60.0% {
+        clip: rect(30px, 9999px, 16px, 0);
+      }
+      65% {
+        clip: rect(59px, 9999px, 50px, 0);
+      }
+      70% {
+        clip: rect(41px, 9999px, 62px, 0);
+      }
+      75% {
+        clip: rect(2px, 9999px, 82px, 0);
+      }
+      80% {
+        clip: rect(47px, 9999px, 73px, 0);
+      }
+      85.0% {
+        clip: rect(3px, 9999px, 27px, 0);
+      }
+      90% {
+        clip: rect(26px, 9999px, 55px, 0);
+      }
+      95% {
+        clip: rect(42px, 9999px, 97px, 0);
+      }
+      100% {
+        clip: rect(38px, 9999px, 49px, 0);
+      }
+    
+    }
+  </style>
+</head>
+<body>
+  <img src="imag.png" width="10%">
+  <div class="glitch" data-text="> Отчет акАУ01Атов">> Файл зашифрован!</div>
+    <div class="glitch" data-text="> Авторизация">> Авторизация:</div>
+    <div class="glitch" data-text="">Date_Tablet#U054>Пользователь: Тайбер</div>
+    <div class="glitch" data-text="">Date_Tablet#U054>Пароль: ******</div>
+    <div class="glitch" data-text="> Успешная авторизация">> Успешная авторизация</div>
+    <div class="glitch" data-text="> Начинается распаковка авториз">> Начинается распаковка данных</div>
+    <div class="glitch" data-text="> 10%">> 10%</div>
+    <div class="glitch" data-text="> 40%">> 40%</div>
+    <div class="glitch" data-text="> 10%">> 50%</div>
+    <div class="glitch" data-text="> цИяК">> 80%</div>
+    <div class="glitch" data-text="> 90%">> 90%</div>
+    <div class="glitch" data-text="> 100%">> 100%</div>
+    <div class="glitch" data-text="> Обнаружен бинарный код">> Обнаружен бинарный код</div>
+    <div class="glitch" data-text="> Запрашивается доступ на расшифровку">> Запрашивается доступ на расшифровку</div>
+    <div class="glitch" data-text="> Получен ответ от Антона Зербе">> Получен ответ от Date_Tablet#U053</div>
+    <div class="glitch" data-text="> Расшифровка завершена">> Расшифровка завершена</div>
+    <div class="glitch" data-text="> Начать чтение 01100?">> Начать чтение файла?</div>
+    <div class="glitch" data-text="">Date_Tablet#U054>начать</div>
+    
+    <div class="glitch" data-text="> Наша группа аколивот летит на планету Сцинтилл">> Наша группа акалитов летит на планету Сцинтилл</div>
+    <div class="glitch" data-text="так как в мирье улье, по докладам от орбиторов,">так как в мирье улье, по докладам от орбиторов, </div>
+    <div class="glitch" data-text="активизировали деятельность один подпольный культ.">активизировали деятельность один подпольный культ. </div>
+    <div class="glitch" data-text="По дороге Данс (наш лидер группы) подготавливал нас">По дороге Данс (наш лидер группы) подготавливал нас </div>
+    <div class="glitch" data-text="к высадке. По его словам он там вырас, и есть много знакомых">к высадке. По его словам он там вырас, и есть много знакомых </div>
+    <div class="glitch" data-text="которые нам помогут, по попрасил не выделяться, так как, по его">которые нам помогут, по попрасил не выделяться, так как, по его </div>
+    <div class="glitch" data-text="словам, помимо культистов тут есть другие враги. Подробности">словам, помимо культистов тут есть другие враги. Подробности </div>
+    <div class="glitch" data-text="> Дань высадки на планету, Данс и Марья пытались как нибудь">> День высадки на планету, Данс и Марья пытались как нибудь</div>
+    <div class="glitch" data-text="замаскировать мой внешний вид. Я на отрез отказался отсоединять">замаскировать мой внешний вид. Я на отрез отказался отсоединять</div>
+    <div class="glitch" data-text="хоть один механодендрид. Моё мнение - плаща более чем хватало ">хоть один механодендрид. Моё мнение - плаща более чем хватало </div>
+    <div class="glitch" data-text="для скрытия моей .не плоти..">для скрытия моей "не плоти".</div>
+    <div class="glitch" data-text=">">></div>
+    <div class="glitch" data-text="> Обнаружен звуковой файл">> Обнаружен звуковой файл</div>
+    <div class="glitch" data-text="">Отдаленный молодой голос: "мне плохо, когда мы уже спустимся на зем..." </div>
+    <div class="glitch" data-text="">*звуки рвоты*</div>
+    <div class="glitch" data-text="">Спор на переднем плане</div>
+    <div class="glitch" data-text="">Женский голос: "НЕТ!!! В таком виде мы прям в порту вызовим лишнее</div>
+    <div class="glitch" data-text="">внимание!"</div>
+    <div class="glitch" data-text="">Муржской голос: "ну уж прости, но это груду железа никуда не спрятать!"</div>
+    <div class="glitch" data-text="">Мой механический голос: "Эй! Я бы попросил..."</div>
+    <div class="glitch" data-text="">Женский голос *перебевает*: "и ты хочешь чтобы он все это время сидел </div>
+    <div class="glitch" data-text="">в гостиничном номере?? Он мне все уши прожужжал про то как хочет</div>
+    <div class="glitch" data-text="">посмотреть на технолигии этого ультя и то. чем культисты сдесь пользуются.</div>
+    <div class="glitch" data-text="">он на нас обидится если оставим его несколько недель в отеле сидеть!"</div>
+    <div class="glitch" data-text="">Мой голос: " не, ну если подругому никак, я не против...."</div>
+    <div class="glitch" data-text="">Женский голос: перебивает: "Так, молчать, мы тут решаем что делать"</div>
+    <div class="glitch" data-text="">Муржской голос *шопотом близко*: "Она меня иногда пугает"</div>
+    <div class="glitch" data-text="">Мой голос *шепетом*: "плоть конечно слаба, но яйца у неё точно стальные"</div>
+    <div class="glitch" data-text="">*смех*</div>
+    <div class="glitch" data-text="">Женский голос *злобно*: Сейчас нет времени на ваши дурачества!</div>
+    <div class="glitch" data-text="">Мы скоро высаживаемся!"</div>
+    <div class="glitch" data-text="">Муржской голос: "Вообщето прайм тут не ты, а..." *замолк в панике*</div>
+    <div class="glitch" data-text="">*слышен страшный взгляд девушки* *молчание*</div>
+    <div class="glitch" data-text="Запись закончена">> Запись завершена</div>
+    <div class="glitch" data-text=">">></div>
+    <div class="glitch" data-text="> Продолжение отчета:">> Продолжение отчета:</div>
+    <div class="glitch" data-text="> День третий в улье. Данс отвел нас в трущебы, так как по его словам">> День третий в улье. Данс отвел нас в трущебы, так как по его словам</div>
+    <div class="glitch" data-text="Там у него есть связи. Он не говорит про своё прошлое, но я его знаю">Там у него есть связи. Он не говорит про своё прошлое, но я его знаю</div>
+    <div class="glitch" data-text="год, и доверяю ему.">год, и доверяю ему.</div>
+    <div class="glitch" data-text="Там он попросил нас подождать снаружи бара.">Там он попросил нас подождать снаружи бара.</div>
+    <div class="glitch" data-text="Через 5 минут на нас с ножами напали. Мне пытались воткнуть его в спину,">Через 5 минут на нас с ножами напали. Мне пытались воткнуть его в спину,</div>
+    <div class="glitch" data-text="Но не смогли пробить, на пути ножа было много механизмов. Марье не повезло">Но не смогли пробить, на пути ножа было много механизмов. Марье не повезло</div>
+    <div class="glitch" data-text="Она получила довольно сильный урон. Карл, молодой аколит, смог их уложить">Она получила довольно сильный урон. Карл, молодой аколит, смог их уложить</div>
+    <div class="glitch" data-text="Без оружия. Я вылечил Марью.">Без оружия. Я вылечил Марью.</div>
+    <div class="glitch" data-text=">л">></div>
+    <div class="glitch" data-text="> Обнаружен звуковой 0301">> Обнаружен звуковой файл</div>
+    <div class="glitch" data-text="*звуки работы медецинского механодендрита*">*звуки работы медецинского механодендрита*</div>
+    <div class="glitch" data-text="">Мой голос *с долей юмора*: "Как долго я вам буду говорить что плоть слаба..."</div>
+    <div class="glitch" data-text="">Женский голос *ослабленно*: "хехе.. Так карл, связывай их! Допрос будет!</div>
+    <div class="glitch" data-text="> Запись закончена">> Запись завершена</div>
+    <div class="glitch" data-text=">">></div>
+    <div class="glitch" data-text="> После возвращения Данса мы повели их на допрос. Я при нем не учавствовал">> После возвращения Данса мы повели их на допрос. Я при нем не учавствовал</div>
+    <div class="glitch" data-text="но группа вышла радосная, и сказала, что надо проверить одно">но группа вышла радосная, и сказала, что надо проверить одно</div>
+    <div class="glitch" data-text="поместье.">поместье.</div>
+    <div class="glitch" data-text="> Как только мы подошли к поместью с заднего двора вылетело 4 ховера.">> Как только мы подошли к поместью с заднего двора вылетело 4 ховера.</div>
+    <div class="glitch" data-text="Я завел первый попавшийся ховер, так как мы не должны были их упустить">Я завел первый попавшийся ховер, так как мы не должны были их упустить</div>
+    <div class="glitch" data-text="Началась погоня. В процессе погони мы сбили 2 ховера, но нам оторвало">Началась погоня. В процессе погони мы сбили 2 ховера, но нам оторвало</div>
+    <div class="glitch" data-text="крышу нашего. После случилась то трогическое событие.">крышу нашего. После случилась то трогическое событие.</div>
+    <div class="glitch" data-text="> обнанарара звуковой файл">> Обнаружен звуковой файл</div>
+    <div class="glitch" data-text="**звуки рассекающегося воздуха, стрельба, крики команд прайма*">*звуки рассекающегося воздуха, стрельба, крики команд прайма*</div>
+    <div class="glitch" data-text="02енский голос *громко*: 1Карл!! Не кидай гранату, она не доле...">Женский голос *громко*: "Карл!! Не кидай гранату, она не доле..." </div>
+    <div class="glitch" data-text="*Мучения*">*крики*</div>
+    <div class="glitch" data-text="*грохот*">*взрыв*.</div>
+    <div class="glitch" data-text="сшсш121шшс1шшс1шс10сшс0шс0шс10сш01012">*помехи* *шум* *шум* *шум* *шум* *ещё взрыв"</div>
+    <div class="glitch" data-text="> Запись завершена">> Запись завершена</div>
+    <div class="glitch" data-text=">">></div>
+    <div class="glitch" data-text="> Аколит Карл в попытки сбить ховер бросил в них гранату.">> Аколит Карл в попытки сбить ховер бросил в них гранату.</div>
+    <div class="glitch" data-text="Но из зафизики(у нас была погоня, и в нашу сторону шёл сильный ветер).">Но из зафизики(у нас была погоня, и в нашу сторону шёл сильный ветер).</div>
+    <div class="glitch" data-text="Граната залетела к нам в кабину.">Граната залетела к нам в кабину.</div>
+    <div class="glitch" data-text="Карл и марья были разорванны на куски. Марья стояла между мной и">Карл и марья были разорванны на куски. Марья стояла между мной и</div>
+    <div class="glitch" data-text="гранатой. В итоге я даже после жеского приземления почти не пострадал.">гранатой. В итоге я даже после жеского приземления почти не пострадал.</div>
+    <div class="glitch" data-text="Данс был вроде бы ещё жив, но на грани смерти. Я сделал что смог,">Данс был вроде бы ещё жив, но на грани смерти. Я сделал что смог, </div>
+    <div class="glitch" data-text="но он ещё не скоро поправится, он утратил много оргонов и остался без рук">но он ещё не скоро поправится, он утратил много оргонов и остался без рук</div>
+    <div class="glitch" data-text="Так как команда была разгромленна, я с Дансом вернулся в космопорт.">Так как команда была разгромленна, я с Дансом вернулся в космопорт.</div>
+    <div class="glitch" data-text="На этом отчет завершен...">На этом отчет завершен...</div>
+    <div class="glitch" data-text=">">> </div>
+    <div class="glitch" data-text="> Завершено">> Файл прочитан</div>
+    <div class="glitch" data-text="> Отчистить кеш Date_Tablet#U054">> Отчистить кеш датапланшета?</div>
+    <div class="glitch" data-text="">Date_Tablet#U054>Отчистка</div>
+    <div class="glitch" data-text="> Выполняется отчистка">> Выполняется отчистка</div>
+    <div class="glitch" data-text="> 30%">> 50%</div>
+    <div class="glitch" data-text="> 1000%">> 100%</div>
+    <div class="glitch" data-text="> Завершено">> Завершено</div>
+</body>
+</html>
